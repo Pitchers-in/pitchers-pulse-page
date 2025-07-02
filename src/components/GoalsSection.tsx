@@ -93,10 +93,9 @@ const GoalsSection = () => {
         <div className="text-center mt-16">
           <Card className="max-w-2xl mx-auto bg-gradient-to-r from-purple-600 to-blue-600 text-white border-0">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4">Join Our Journey</h3>
+              <h3 className="text-2xl font-bold mb-4">Ready to Take Your Business to the Next Level?</h3>
               <p className="text-lg">
-                Be part of our mission to shape the future of technology. 
-                Together, we can achieve extraordinary things.
+                Join our community of entrepreneurs and investors and start your journey to success.
               </p>
             </CardContent>
           </Card>
