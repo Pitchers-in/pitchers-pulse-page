@@ -17,10 +17,10 @@ const Hero = () => {
       
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-7xl md:text-9xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-fade-in">
-          PITCHERS
+          PITCH YOUR STARTUP
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-300 animate-fade-in delay-500">
-          Crafting Digital Excellence Through Innovation
+          Pitchers connects ambitious founders with investors who believe in bold ideas
         </p>
         <Button 
           onClick={scrollToNext}
