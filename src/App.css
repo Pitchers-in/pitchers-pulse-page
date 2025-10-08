@@ -1,9 +1,27 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+} */
+/* 
+.footer-background {
+    position: relative;
+    background-image: url('/images/Every Peak.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.footer-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+} */
 
 .logo {
   height: 6em;
@@ -39,4 +57,19 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+@keyframes slide-bg {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+.animate-slide-bg {
+  animation: slide-bg 20s linear infinite;
+  background-size: 200% auto;
 }

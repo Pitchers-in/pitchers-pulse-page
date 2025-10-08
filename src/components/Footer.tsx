@@ -1,8 +1,8 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-white py-12">
-      <div className="max-w-6xl mx-auto px-4">
+    <footer className="text-white py-20 footer-background">
+      <div className="max-w-6xl mx-auto px-4 relative z-10 rounded-lg py-12">
         <div className="text-center">
           <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
             PITCHERS
