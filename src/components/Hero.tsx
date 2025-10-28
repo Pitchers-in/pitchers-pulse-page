@@ -10,10 +10,6 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white relative overflow-hidden">
       {/* Animated background elements */}
-      {/* <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-purple-500/20 to-transparent rounded-full animate-pulse"></div>
-        <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-blue-500/20 to-transparent rounded-full animate-pulse delay-1000"></div>
-      </div> */}
 
       {/* Sliding background image */}
       <div className="absolute inset-0 bg-[url('/images/EveryPeak.png')] bg-cover bg-center animate-slide-bg opacity-40" />
@@ -31,13 +27,13 @@ const Hero = () => {
         {/* Right: Links + Buttons */}
         <nav className="flex items-center space-x-8">
           {/* Links */}
-          <a href="#about" className="text-gray-300 text-lg hover:text-white transition-colors duration-200">
+          <a href="#about" className="text-gray-100 text-lg hover:text-white transition-colors duration-200">
             About
           </a>
-          <a href="#work" className="text-gray-300 text-lg hover:text-white transition-colors duration-200">
+          <a href="#work" className="text-gray-100 text-lg hover:text-white transition-colors duration-200">
             Work
           </a>
-          <a href="#prices" className="text-gray-300 text-lg hover:text-white transition-colors duration-200">
+          <a href="#prices" className="text-gray-100 text-lg hover:text-white transition-colors duration-200">
             Prices
           </a>
 
@@ -82,10 +78,10 @@ const Hero = () => {
       </header>
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <h1 className="text-7xl md:text-9xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-fade-in">
-          PITCH YOUR STARTUP
+          PITCH BUILD GROW
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-gray-300 animate-fade-in delay-500">
-          Pitchers connects ambitious founders with investors who believe in bold ideas
+          Pitchers helps founders build powerful products, grow their businesses, and connect with the right investors — all in one ecosystem
         </p>
         <Button
           onClick={scrollToNext}
@@ -97,7 +93,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ArrowDown className="h-6 w-6 text-white/50" />
+        <ArrowDown className="h-8 w-8 text-white/50" />
       </div>
     </section>
   );
