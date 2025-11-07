@@ -1,8 +1,20 @@
 
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+} from "@/components/ui/dialog";
+import { useState } from "react";
+
 
 const Hero = () => {
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
   const scrollToNext = () => {
     document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -40,11 +52,16 @@ const Hero = () => {
           {/* Buttons */}
           <Button
             className="text-black text-lg bg-white hover:text-white transition-all"
+            onClick={() => window.location.href = 'https://calendly.com/dev-pitchers/30min'}
           >
             Book a Call
             <ArrowUpRight />
           </Button>
-          <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-lg">
+          {/* ✅ Login button — opens popup */}
+          <Button
+            onClick={() => setIsDialogOpen(true)}
+            className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white text-lg"
+          >
             Login
           </Button>
 
@@ -95,6 +112,28 @@ const Hero = () => {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="h-8 w-8 text-white/50" />
       </div>
+
+      {/* ✅ Popup Modal */}
+      <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        <DialogContent className="bg-slate-900 text-white border border-gray-700">
+          <DialogHeader>
+            <DialogTitle className="text-2xl bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent">
+              Login Unavailable
+            </DialogTitle>
+            <DialogDescription className="text-gray-400">
+              The login feature is temporarily unavailable. We’re working on it — please check back soon.
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button
+              onClick={() => setIsDialogOpen(false)}
+              className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white"
+            >
+              Okay
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };

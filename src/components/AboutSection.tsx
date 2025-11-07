@@ -55,35 +55,35 @@ const testimonials = [
     role: "Founder, GreenTech",
     quote:
       "Pitchers connected us to the right investors in days — the process felt seamless and professional.",
-    image: "/avatars/user1.jpg",
+    image: "images/avatars/dev.jpg",
   },
   {
     name: "Sanya Mehta",
     role: "Co-founder, FitFlex",
     quote:
       "The platform made it easy to showcase our idea and find genuine mentors who believed in us.",
-    image: "/avatars/user2.jpg",
+    image: "images/avatars/candy.jpg",
   },
   {
     name: "Rohan Das",
     role: "Investor, SeedStage",
     quote:
       "A brilliant network for early-stage startups — transparency and trust make Pitchers stand out.",
-    image: "/avatars/user3.jpg",
+    image: "images/avatars/sudeep.jpg",
   },
   {
     name: "Ishita Roy",
     role: "CEO, MindWell",
     quote:
       "The user experience is fantastic. It feels like a real startup ecosystem in one place.",
-    image: "/avatars/user4.jpg",
+    image: "images/avatars/ayan.jpg",
   },
   {
     name: "Vikram Patel",
     role: "Founder, ShopLink",
     quote:
       "From pitch deck upload to investor calls — everything was streamlined and easy to manage.",
-    image: "/avatars/user5.jpg",
+    image: "images/avatars/monomoy.jpg",
   },
 ];
 
@@ -110,7 +110,7 @@ const InfiniteRow = ({
             key={index}
             className="min-w-[320px] bg-white/70 backdrop-blur-sm border border-gray-100 shadow-md hover:shadow-lg transition-all duration-300"
           >
-            <CardContent className="p-6">
+            <CardContent className="p-6 whitespace-normal">
               <div className="flex items-center mb-4">
                 <img src={t.image} alt={t.name} className="w-12 h-12 rounded-full mr-4 object-cover" />
                 <div>
@@ -133,7 +133,7 @@ const AboutSection = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            What People Say
+            From Promise to Proof
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Real feedback from founders, investors, and mentors who’ve used our platform.
