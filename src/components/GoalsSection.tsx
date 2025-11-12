@@ -44,7 +44,8 @@ const GoalsSection = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our Goals
+            {/* Our Goals */}
+            About Us
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Our strategic journey focuses on sustainable growth, innovation-driven solutions, and expanding our global impact. From strong foundations to groundbreaking innovation, we are committed to shaping the future of startups and investment ecosystems.

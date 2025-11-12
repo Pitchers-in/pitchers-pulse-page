@@ -1,6 +1,7 @@
 
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import {
   Dialog,
   DialogContent,
@@ -39,15 +40,18 @@ const Hero = () => {
         {/* Right: Links + Buttons */}
         <nav className="flex items-center space-x-8">
           {/* Links */}
-          <a href="#about" className="text-gray-100 text-lg hover:text-white transition-colors duration-200">
+          <Link to="/about" className="text-gray-100 text-lg hover:text-white transition-colors duration-200">
             About
-          </a>
+          </Link>
           <a href="#work" className="text-gray-100 text-lg hover:text-white transition-colors duration-200">
             Work
           </a>
           <a href="#prices" className="text-gray-100 text-lg hover:text-white transition-colors duration-200">
             Prices
           </a>
+          <Link to="/privacypolicy" className="text-gray-100 text-lg hover:text-white transition-colors duration-200">
+            Privacy Policy
+          </Link>
 
           {/* Buttons */}
           <Button

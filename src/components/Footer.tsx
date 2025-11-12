@@ -10,7 +10,10 @@ const Footer = () => {
           <p className="text-gray-400 mb-8">
             Crafting Digital Excellence Through Innovation
           </p>
-          
+          <p className="text-gray-400 mb-8">
+            Contact us on dev@pitchers.in
+          </p>
+
           <div className="flex justify-center space-x-8 mb-8">
             <a href="#about" className="text-gray-400 hover:text-white transition-colors duration-300">About</a>
             <a href="#services" className="text-gray-400 hover:text-white transition-colors duration-300">Services</a>
